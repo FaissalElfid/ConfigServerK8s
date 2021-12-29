@@ -7,3 +7,6 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+      
+message:
+  author: faissal_elfid
