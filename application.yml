@@ -7,6 +7,14 @@ eureka:
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://eureka-0.eureka.default.svc.cluster.local:8761/eureka
+  zipkin:
+    base-url: http://zipkin-svc/
       
-message:
-  author: faissal_elfid
+management:
+  endpoint:
+    health:
+      show-details: "ALWAYS"
+  endpoints:
+    web:
+      exposure:
+        include: "*"
